@@ -18,6 +18,15 @@ int main()
 	cout << "   |||||||||| " << endl;
 	cout << "Welcome to the Hide" << endl;
 	cout << "Done by The Watch_dog" << endl;
+	string choice;
+	cout << "What do you want to do" << endl;
+	cout << "1)Encrypt" << endl;
+	cout << "2)Test" << endl;
+	cout << "3)Decrypt" << endl;
+	cin >> choice;
+}
+void encrypt()
+{
     string varpath;
     cout << "Enter the path to the file you want to hide(You can drag to the terminal)" << endl;
     cout << "hide>>";
@@ -28,4 +37,12 @@ int main()
     system("cat *.jpg hide.zip > output.jpg");
     system("rm -r hide");
     system("rm hide.zip");
+}
+
+void test()
+{
+    string imagename;
+    cout << "Input the name of the test 'image'(with extension)" << endl;
+    cin >> imagename
+    system("unzip -t " + imagename);
 }
