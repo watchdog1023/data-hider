@@ -7,6 +7,12 @@
 
 using namespace std;
 
+//Prototypes
+void encrypt();
+void decrypt();
+void test();
+
+
 int main()
 {
     cout << " |||||	   ||||| " << endl;
@@ -37,6 +43,11 @@ void encrypt()
     system("cat *.jpg hide.zip > output.jpg");
     system("rm -r hide");
     system("rm hide.zip");
+}
+
+void decrypt()
+{
+    
 }
 
 void test()
